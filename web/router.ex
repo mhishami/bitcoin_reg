@@ -7,5 +7,7 @@ defmodule BitcoinReg.Router do
 
   scope "/api", BitcoinReg do
     pipe_through :api
+
+    resources "/register", RegisterController, except: [:new, :edit, :show, :delete]
   end
 end
