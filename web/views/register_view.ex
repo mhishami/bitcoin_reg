@@ -2,7 +2,8 @@ defmodule BitcoinReg.RegisterView do
   use BitcoinReg.Web, :view
 
   def render("index.json", %{register: register}) do
-    %{data: render_many(register, BitcoinReg.RegisterView, "register.json")}
+    #%{data: render_many(register, BitcoinReg.RegisterView, "register.json")}
+    %{error: "not allowed"}
   end
 
   def render("show.json", %{register: register}) do

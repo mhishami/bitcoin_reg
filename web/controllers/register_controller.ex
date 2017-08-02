@@ -4,8 +4,9 @@ defmodule BitcoinReg.RegisterController do
   alias BitcoinReg.Register
 
   def index(conn, _params) do
-    register = Repo.all(Register)
-    render(conn, "index.json", register: register)
+    #register = Repo.all(Register)
+    #render(conn, "index.json", register: register)
+    render(conn, "index.json", register: %{})
   end
 
   def create(conn, %{"register" => register_params}) do
