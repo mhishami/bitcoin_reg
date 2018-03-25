@@ -19,6 +19,6 @@ defmodule BitcoinReg.Register do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:btc_address, :btc_tx_hash, :eth_address, :btc_sig, :contact, :referrer, :accept_tnc])
-    |> validate_required([:btc_address, :btc_tx_hash, :eth_address, :btc_sig, :contact, :referrer, :accept_tnc])
+    |> validate_required([:btc_address, :btc_tx_hash, :eth_address, :btc_sig, :contact, :accept_tnc])
   end
 end
